@@ -142,3 +142,33 @@ Completed analysis in `analysis.ipynb`:
 - Calculated average temperature shift (+1.3 points on 5-point scale)
 
 Key finding: MAC's current lineup skews warm by nearly 2:1, and documented reformulations show consistent warming shifts.
+
+---
+
+## Methodology Summary
+
+**Data Collection:**
+- Shade data was collected from Temptalia's MAC lipstick database via Wayback Machine archives (November 2024 snapshot)
+- 111 shades sampled from a database of 1,441 total MAC lipstick shades
+- Undertone classifications (warm/cool/neutral) taken directly from Temptalia's expert reviews
+
+**Reformulation Evidence:**
+- Compiled from beauty publications including Dazed Digital and Auxiliary Beauty
+- Cross-referenced with MAC's own product launches and descriptions
+- Focused on documented cases where reviewers compared old and new formulas
+
+**Temperature Scale:**
+- Created a 1-5 scale (1 = very cool/blue undertones, 5 = very warm/orange undertones)
+- Assigned scores based on documented descriptions in reviews, not measured color values
+- These are qualitative assessments, not spectrophotometer analysis
+
+**Limitations:**
+- The shifts happened gradually over years, not at a single point in time
+- Temperature scores are interpretive, based on reviewer descriptions like "warmer," "more orange," "pinker"
+- Sample of 111 shades may not represent the full MAC catalog
+
+**Sources:**
+- Temptalia MAC lipstick database (via Wayback Machine)
+- Dazed Digital
+- Auxiliary Beauty
+- MAC Cosmetics product descriptions
