@@ -145,6 +145,16 @@ Key finding: MAC's current lineup skews warm by nearly 2:1, and documented refor
 
 ---
 
+## Step 9: Chart Design Choices
+
+For the undertone distribution chart, I chose proportional circles over a bar chart. The circles felt more visually engaging and better conveyed the "weight" of the warm category dominating MAC's lineup — the large warm circle immediately communicates imbalance in a way that bars don't.
+
+However, I'm uncertain about my responsive design choices. Looking back, I may not have differentiated the mobile and desktop versions enough. The circles are arranged similarly across breakpoints, just scaled down. A stronger approach might have been to arrange the circles horizontally on desktop (where there's more width) and stack them vertically on mobile. This would have made better use of each screen's proportions and shown more intentional responsive thinking.
+
+Lesson learned: responsive design isn't just about scaling — it's about rethinking layout for each context.
+
+---
+
 ## Methodology Summary
 
 **Data Collection:**
