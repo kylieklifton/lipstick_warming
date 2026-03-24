@@ -2,11 +2,15 @@
 
 ## Step 1: Inspiration
 
-Interview with Rosanna Carpentier, an Ulta Beauty store employee:
+Online makeup creators like Emily Harper have been comparing vintage lipstick products to their modern rereleases, noting that many shades appear warmer than they used to be. This caught my attention as a potential data story.
+
+To ground this observation, I interviewed Rosanna Carpentier, an Ulta Beauty store employee:
 
 > "I have noticed that formulas have changed and leaned warmer. Though I'm not sure which ones."
 
-She also noted that customers have often complained about individual product formula changes. This sparked the question: can we prove this with data?
+She also noted that customers have often complained about individual product formula changes. A Sephora store manager declined to comment on the record, but said she personally had not observed the trend.
+
+This sparked the question: can we prove this with data?
 
 ---
 
@@ -121,13 +125,20 @@ The company essentially admitted the warming happened by creating cool-toned alt
 
 ---
 
-## Step 6: Data Files
+## Step 7: Data Files
 
 - `data/mac_shades.csv` - 111 MAC lipstick shades with undertone data (from Temptalia via Wayback Machine)
 - `data/reformulation_evidence.csv` - 6 documented cases of shades shifting warmer
+- `data/temperature_change_mock.csv` - Temperature shift data for chart visualization
 
 ---
 
-## Step 7: Analysis
+## Step 8: Jupyter Notebook Analysis
 
-[To be completed in Jupyter notebook]
+Completed analysis in `analysis.ipynb`:
+- Loaded and explored MAC shade data
+- Calculated undertone distribution (56% warm, 33% cool, 5% neutral)
+- Loaded reformulation evidence
+- Calculated average temperature shift (+1.3 points on 5-point scale)
+
+Key finding: MAC's current lineup skews warm by nearly 2:1, and documented reformulations show consistent warming shifts.
