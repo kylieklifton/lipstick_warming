@@ -15,18 +15,18 @@
             font-family: Georgia, 'Times New Roman', serif;
             background-color: #fff5f5;
             color: #4a2c2a;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         header {
             background: linear-gradient(135deg, #c44536 0%, #a23b72 100%);
             color: white;
-            padding: 3rem 1rem;
+            padding: 4rem 1rem;
             text-align: center;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 0.5rem;
             font-weight: normal;
             letter-spacing: 1px;
@@ -35,6 +35,7 @@
         header p {
             font-style: italic;
             opacity: 0.9;
+            font-size: 1.1rem;
         }
 
         main {
@@ -44,29 +45,67 @@
         }
 
         .intro {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             margin-bottom: 2rem;
             border-left: 4px solid #c44536;
-            padding-left: 1rem;
+            padding-left: 1.5rem;
         }
 
         section {
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
 
         h2 {
             color: #a23b72;
             margin-bottom: 1rem;
             font-weight: normal;
+            font-size: 1.6rem;
         }
 
-        .chart-placeholder {
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .chart-container {
+            margin: 2rem 0;
             background: #fce8e8;
-            border: 2px dashed #c44536;
-            padding: 3rem;
-            text-align: center;
-            color: #a23b72;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .chart-container iframe {
+            width: 100%;
+            border: none;
+        }
+
+        .two-column {
+            display: flex;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .two-column > div {
+            flex: 1;
+        }
+
+        blockquote {
+            background: #fce8e8;
+            padding: 1.5rem;
+            border-left: 4px solid #c44536;
             margin: 1.5rem 0;
+            font-style: italic;
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #fce8e8 0%, #fce8e8 100%);
+            padding: 0.2rem 0.4rem;
         }
 
         footer {
@@ -77,13 +116,21 @@
             font-size: 0.9rem;
         }
 
-        @media (max-width: 600px) {
+        footer a {
+            color: #fce8e8;
+        }
+
+        @media (max-width: 700px) {
             header h1 {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .intro {
-                font-size: 1rem;
+                font-size: 1.1rem;
+            }
+
+            .two-column {
+                flex-direction: column;
             }
         }
     </style>
@@ -91,29 +138,95 @@
 <body>
     <header>
         <h1>The Warming of Lipstick</h1>
-        <p>How lipstick formulas have shifted toward warmer tones</p>
+        <p>Your favorite shade might not be the same color it used to be</p>
     </header>
 
     <main>
         <p class="intro">
-            An analysis of lipstick ingredients reveals a gradual shift toward warmer undertones in popular formulas over the past decade.
+            TikTok makeup artists like Emily Harper have been sounding the alarm: your favorite lipstick shades are not the same color they used to be. By comparing rereleases to vintage products from decades past, they've reached a conclusion that's hard to ignore. The shades are getting warmer.
         </p>
 
         <section>
-            <h2>The Shift in Shades</h2>
-            <p>Content coming soon.</p>
-            <div class="chart-placeholder">Chart 1 will go here</div>
+            <h2>The Data Behind the Trend</h2>
+            <p>MAC Cosmetics is one of the most successful and respected makeup lines in the industry, known for their extensive range of bullet lipsticks that have achieved cult status since the brand's founding in 1984. Shades like Ruby Woo, Velvet Teddy, and Spice are iconic.</p>
+
+            <p>An analysis of 111 MAC lipstick shades from the Temptalia beauty database reveals a lineup that skews decidedly warm: <span class="highlight">56% of shades are warm-toned, compared to just 33% cool</span>. The neutral middle ground accounts for only 5%.</p>
+
+            <p>But the more striking finding isn't what MAC sells now. It's what they've quietly admitted about what changed.</p>
         </section>
 
         <section>
-            <h2>Inside the Formula</h2>
-            <p>Content coming soon.</p>
-            <div class="chart-placeholder">Chart 2 will go here</div>
+            <h2>What the Experts Say</h2>
+            <blockquote>
+                "I have noticed that formulas have changed and leaned warmer. Though I'm not sure which ones."
+                <cite>— Rosanna Carpentier, Ulta Beauty employee</cite>
+            </blockquote>
+
+            <p>Carpentier says customers have often complained about individual product formula changes. A Sephora store manager declined to comment on the record, but said she has not personally observed the trend.</p>
+
+            <p>The mixed response from retail employees reflects the subtle nature of the shift. These aren't dramatic color changes. They're gradual warmings that accumulate over years of reformulation.</p>
+        </section>
+
+        <section>
+            <h2>The Confession in Cool Spice</h2>
+            <p>In January 2025, MAC launched Cool Spice, a lip liner meant to replicate the original 1990s Spice shade. Why would a company re-release a product that's still on shelves?</p>
+
+            <p>Because the current Spice isn't the same color anymore.</p>
+
+            <blockquote>
+                "As formulas changed and labs moved countries, the colour of Spice shifted and the modern day shade now runs much warmer and more orange than the original cool tone."
+                <cite>— Dazed Digital</cite>
+            </blockquote>
+
+            <p>Spice isn't alone. MAC has quietly created an entire ecosystem of "corrected" shades:</p>
+
+            <ul style="margin: 1rem 0 1rem 2rem;">
+                <li><strong>Ruby Woo → Ruby New:</strong> The iconic blue-red got a "softer, more modern" sister shade that's lighter and pinker</li>
+                <li><strong>Velvet Teddy → Cool Teddy:</strong> The bestselling nude now has a cooler counterpart for those who found the original too warm</li>
+                <li><strong>Spice → Cool Spice:</strong> The 90s cult favorite, restored to its original cool-toned glory</li>
+            </ul>
+
+            <p>Each launch tells the same story: the originals drifted warm, and MAC knows it.</p>
+        </section>
+
+        <section>
+            <h2>Measuring the Shift</h2>
+            <p>Using documented reviews and MAC's own product launches, I tracked the undertone shifts in reformulated shades.</p>
+
+            <div class="chart-container">
+                <iframe title="Popular MAC Shades Got Warmer" aria-label="Range Plot" id="datawrapper-chart-Y9LPf" src="https://datawrapper.dwcdn.net/Y9LPf/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="285" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+            </div>
+        </section>
+
+        <section>
+            <h2>The Current Lineup</h2>
+            <p>Analysis of 111 MAC lipstick shades from the Temptalia database shows the brand's current offerings skew decidedly warm:</p>
+
+            <div class="chart-container">
+                <!-- DATAWRAPPER CHART 2 OR AI2HTML EMBED HERE -->
+                <p style="text-align: center; color: #999; padding: 3rem;">Chart: Warm vs Cool distribution (embed goes here)</p>
+            </div>
+
+            <p><span class="highlight">56% of MAC shades are warm-toned</span>, compared to just 33% cool. The neutral middle ground? Only 5%.</p>
+        </section>
+
+        <section>
+            <h2>Why It Matters</h2>
+            <p>For consumers who fell in love with a specific shade years ago, these gradual shifts mean repurchasing the "same" lipstick might yield a noticeably different color. The lipstick that matched your skin tone perfectly in 2015 might pull orange on you now.</p>
+
+            <p>MAC's solution of releasing "Cool" variants acknowledges the problem, but it also means customers now have to hunt for the version that matches what they originally bought.</p>
+        </section>
+
+        <section>
+            <h2>Methodology</h2>
+            <p>Shade data was collected from Temptalia's MAC lipstick database via Wayback Machine archives (111 shades sampled). Reformulation evidence was compiled from beauty publications including Dazed Digital and Auxiliary Beauty.</p>
+            <p>Temperature scores (1-5 scale, cool to warm) were assigned based on documented descriptions in reviews, not measured color values. The shifts happened gradually over years as formulas changed, not at a single point in time.</p>
+            <p>Data sources: Dazed Digital, Auxiliary Beauty, MAC Cosmetics product descriptions.</p>
         </section>
     </main>
 
     <footer>
-        <p>A Data Studio Project</p>
+        <p>A Data Studio Project | <a href="https://github.com/kylieklifton/lipstick_warming">View on GitHub</a></p>
     </footer>
 </body>
 </html>
